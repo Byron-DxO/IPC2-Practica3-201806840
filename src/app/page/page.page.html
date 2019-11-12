@@ -1,14 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>asd</ion-title>
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-button>
-  Registro
-</ion-button>
-<ion-button>
-  Entrar
-</ion-button>
+    <br />
+    <ion-text color="dark">
+      <strong> Usuario</strong>
+    </ion-text>
+    <ion-input type="text" color="dark" placeholder="pikachu21" [(ngModel)]="in_email"></ion-input>
+    <br/>
+    <ion-text color="dark">
+      <strong>Contraseña</strong>
+    </ion-text>
+    <ion-input type="password" color="dark" placeholder="•••••••••••" [(ngModel)]="in_password"></ion-input>
+    <br />
+    <ion-button expand="block" color="dark" fill="solid" >Iniciar Sesión</ion-button>
+    <ion-button expand="block" color= "dark" fill="solid">Registrarse </ion-button>
+
 </ion-content>
