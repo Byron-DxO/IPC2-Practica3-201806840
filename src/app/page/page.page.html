@@ -1,10 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+    <ion-toolbar>
+      <ion-buttons slot="start"> 
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+  
+      <ion-title>Inicio de Sesión</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content padding>
+    <ion-text color="dark">
+        <h1><strong>Bienvenido!</strong></h1>
+        <p>Ingrese sus datos </p>
+      </ion-text>
     <br />
     <ion-text color="dark">
       <strong> Usuario</strong>
@@ -17,6 +24,6 @@
     <ion-input type="password" color="dark" placeholder="•••••••••••" [(ngModel)]="in_password"></ion-input>
     <br />
     <ion-button expand="block" color="dark" fill="solid" >Iniciar Sesión</ion-button>
-    <ion-button expand="block" color= "dark" fill="solid">Registrarse </ion-button>
+    <ion-button expand="block" color= "dark" fill="solid" routerlink= "/registro">Registrarse </ion-button>
 
 </ion-content>
